@@ -1,0 +1,36 @@
+package laba3;
+
+import java.util.Scanner;
+
+public class Main {	org.eclipse.jdt.core.formatter.comment.line_length
+    public static void main(String[] args) {
+        System.out.println("������ �������������:");
+        Rectangle r1 = new Rectangle(1, 2, 3, 4);
+        r1.tostring();
+        r1.move(2, -5);
+        r1.tostring();
+        System.out.println("������ �������������:");
+        Rectangle r2 = new Rectangle(5,6);
+        r2.tostring();
+        r2.move(3, 4);
+        r2.tostring();
+        System.out.println("������ �������������:");
+        Rectangle r3 = new Rectangle();
+        r3.tostring();
+        r3.move(1, -1);
+        r3.tostring();
+        System.out.println("�������� ������ minSquare:");
+        r2.minSquare(5, 8);
+        Scanner inColor4 = new Scanner(System.in);
+        System.out.print("������� ���� ������ ��������������: ");
+        DrawRect r4 = new DrawRect(2, 6, 4, 3);
+        r4.draw(inColor4.next());
+        System.out.print("������� ���� ������ � ������������ ���������� ��������������(����� enter): ");
+        Scanner inColor5 = new Scanner(System.in);
+        String n = inColor5.next();
+        Scanner outColor5 = new Scanner(System.in);
+        String m = outColor5.next();
+        ColoredRect r5 = new ColoredRect(1, 4, 5, 3);
+        r5.draw(n, m);
+        createArray(5);
+    }
